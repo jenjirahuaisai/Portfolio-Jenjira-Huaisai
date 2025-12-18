@@ -24,7 +24,7 @@
                     <li>Portfolio</li>
                     <li>Contact me</li>
                     <li><img src="../assets/images/earth.png" alt="language">EN</li>
-                    <li class="signin">Log in</li>
+                    <li class="signin"><img src="../assets/images/login_icon.png">Log in</li>
                 </ul>
             </nav>
     </header>
@@ -35,9 +35,9 @@
             <h3>
                 <&nbsp; /&nbsp;PORTFOLIO&nbsp;>
             </h3>
-            <br><br>
-            <h1>Jenjira&nbsp;&nbsp;Huaisai</h1>
-            <br><br>
+            <br><br><br>
+            <h1>JENJIRA&nbsp;&nbsp;HUAISAI</h1>
+            <br><br><br>
             <p>
                 [&nbsp;IT&nbsp;STUDENT&nbsp;]&nbsp;[&nbsp;NHL&nbsp;STENDEN&nbsp;HOGESCHOOL&nbsp;]
             </p>
@@ -63,10 +63,9 @@
         <div class="about__right">
             <div class="bio">
                 <h4>ABOUT ME<h4>
-                        <br><br>
+                        <br>
                         <p>I am an IT student of NHL Stenden University of Applied Sciences.
-                        <p>I am eager to join a tech company building out-of-the-box solutions</p>
-                        <p>for international clients. I am skilled in graphic designs, </p>
+                        <p>I am eager to learn in IT field.I am skilled in graphic designs,</p>
                         <p>web development, managing projects, and user documentation.</p>
 
                         <button>CV</button>&nbsp;
@@ -86,53 +85,22 @@
         <div class="project__grid">
             <div class="project__item">
                 <img src="../assets/images/graphic.png" alt="graphic">
-                <p>Graphic Designs</p><br>
+                <p>Graphic Designs</p><br><br>
                 <button>Explore</button>
             </div>
 
             <div class="project__item">
                 <img src="../assets/images/webdev.png" alt="graphic">
-                <p>Web Development & Design</p>
+                <p>Web Development & Design</p><br>
                 <button>Explore</button>
             </div>
 
             <div class="project__item">
                 <img src="../assets/images/database.png" alt="graphic">
-                <p>Database Management Application</p>
+                <p>Database Management Application</p><br>
                 <button>Explore</button>
             </div>
         </div>
-    </div>
-
-
-    <!-- PORTFOLIO -->
-    <div class="portfolio__container">
-        <h3>PORTFOLIO</h3>
-        <div class="portfolio__item">
-            <h4>Log in</h4>
-            <br>
-            <p>to explore my portfolio</p>
-            <br><br><br>
-            <div class="input-group">
-                <img src="../assets/images/user-icon.png" class="icon-img">
-                <input type="email" placeholder="Email Address">
-            </div>
-
-            <div class="input-group">
-                <img src="../assets/images/key-icon.png" class="icon-img">
-                <input type="password" placeholder="Password">
-            </div>
-            <br>
-
-            <div class="options">
-                <label><input type="checkbox"> &nbsp;Remember me </label>
-                <a href="#">Forgot Password?</a>
-            </div>
-
-            <button class="login__button">LOG IN</button>
-        </div>
-    </div>
-    </div>
     </div>
 
     <!-- CONTACT -->
