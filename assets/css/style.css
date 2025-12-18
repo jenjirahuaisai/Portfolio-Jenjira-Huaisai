@@ -1,1 +1,493 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* FONTS */
+@font-face {
+    font-family: "cerapro";
+    src: url(../fonts/CeraPro-Light.ttf);
+}
+
+@font-face {
+    font-family: "sirenik";
+    src: url(../fonts/sirenik-regular.otf);
+}
+
+
+body {
+    background-color: white;
+    color: black;
+    font-family: "cerapro";
+}
+
+/* HEADER */
+.header {
+    background-color: white;
+    top: 0px;
+    position: fixed;
+    z-index: 1000;
+
+}
+
+.header__logo {
+    text-align: center;
+    margin: 50px 0 10px 0;
+    font-size: 25px;
+    font-family: "sirenik";
+    font-weight: lighter;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100vw;
+}
+
+/* NAV MENU */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    max-width: 100vw;
+    font-family: "cerapro";
+    font-size: 16px;
+    padding: 30px;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 100px;
+}
+
+nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav li img {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+nav li.signin {
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+nav li.signin:hover {
+    background-color: black;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px 15px;
+}
+
+.language {
+    width: 300px;
+}
+
+/* HERO */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #faf4f1;
+    text-align: center;
+    height: 750px;
+    padding: 50px;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 160px;
+    padding: 50px;
+}
+
+.hero__content p {
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.hero__content h3 {
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.hero__content h1 {
+    letter-spacing: 3px;
+    font-size: 55px;
+    padding: 10px 0px;
+    font-family: "sirenik";
+    font-weight: lighter;
+}
+
+/* ABOUT ME */
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    height: 580px;
+}
+
+.about__left {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding: 80px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.profile img {
+    width: 150px;
+    margin: 30px;
+}
+
+.profile p {
+    font-size: 30px;
+}
+
+.profilesocial img {
+    width: 25px;
+    margin: 50px 5px;
+}
+
+
+.about__right {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    padding: 80px;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(255, 255, 255);
+}
+
+.bio h4 {
+    font-size: 25px;
+}
+
+.bio p {
+    font-size: 16px;
+    line-height: 2;
+    font-weight: lighter;
+}
+
+.bio button {
+    background-color: white;
+    border: 1px solid black;
+    padding: 7px 20px;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.bio button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* PROJECTS */
+
+.project__container {
+    text-align: center;
+    background-color: #faf4f1;
+    padding: 30px;
+    height: 550px;
+}
+
+.project__container h3 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 80px;
+}
+
+.project__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    margin: 0 auto;
+    padding: 50px 0;
+    width: max-content;
+}
+
+.project__container p {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.project__item {
+    background-color: #faf4f1;
+    padding: 30px;
+    width: 280px;
+    height: 260px;
+}
+
+.project__item img {
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+    margin-bottom: 40px;
+    height: auto;
+}
+
+.project__item button {
+    background-color: #faf4f1;
+    color: black;
+    border: 1px solid black;
+    padding: 7px 20px;
+    margin: 30px auto;
+    font-size: 14px;
+}
+
+.project__item button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* PORTFOLIO */
+
+.portfolio__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #faf4f1;
+    padding: 50px;
+    height: 580px;
+}
+
+.portfolio__container h3 {
+    font-size: 25px;
+    margin: 80px 0 40px 0;
+}
+
+.portfolio__container h4 {
+    font-size: 25px;
+}
+
+.portfolio__item {
+    background-color: white;
+    width: 380px;
+    padding: 30px;
+    margin-bottom: 80px;
+}
+
+.portfolio__item p {
+    font-size: 16px;
+}
+
+/* The login box */
+.login-container {
+    text-align: center;
+    width: 380px;
+}
+
+/* Input group */
+.input-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.icon-img {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+}
+
+.input-group .icon {
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    color: black;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px 0 8px 35px;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    font-size: 14px;
+    color: black;
+}
+
+/* Remember + Forgot */
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 25px;
+    color: black;
+}
+
+.options a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Login button */
+.login__button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: black;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    opacity: 0.9;
+}
+
+
+/* GET IN TOUCH */
+
+.contact__container {
+    background-color: #ffffff;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 50px;
+}
+
+.contact__left h3 {
+    font-size: 30px;
+}
+
+.contact__left h4 {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 40px;
+}
+
+.contact__left p {
+    font-size: 16px;
+    line-height: 3;
+}
+
+.contact__left__img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    margin-right: 20px;
+}
+
+.profilesocial2 img {
+    width: 25px;
+    margin: 20px 5px;
+    display: inline-block;
+}
+
+
+.contact__right {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding: 50px;
+}
+
+.contacticon img {
+    width: 60px;
+}
+
+.form__container {
+    background-color: white;
+    padding: 0px 50px;
+    width: 550px;
+}
+
+.form__button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 7px 20px;
+    margin: 30px auto;
+    font-size: 14px;
+}
+
+.form__button:hover {
+    background-color: black;
+    color: white;
+}
+
+.form__container label {
+    line-height: 3;
+}
+
+.form__container textarea {
+    width: 400px;
+    height: 100px;
+}
+
+.form__field {
+    width: 350px;
+    border: none;
+    border-bottom: 0.5px solid #000;
+    outline: none;
+    padding: 5px 0;
+}
+
+
+/* FOOTER */
+.footer__container {
+    background-color: black;
+    height: 80px;
+    color: white;
+}
+
+.footer__container p {
+    padding: 30px;
+    padding-left: 80px;
+    font-size: 12px;
+    text-align: center;
+}
